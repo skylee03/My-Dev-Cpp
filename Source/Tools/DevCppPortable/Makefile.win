@@ -1,0 +1,33 @@
+# Project: devcppPortable
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = devcppPortable_private.res
+OBJ      = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS     = -L"C:/MinGW/lib" -L"C:/MinGW/x86_64-w64-mingw32/lib" -static-libstdc++ -static-libgcc lib/libshlwapi.a -m32 -mwindows -s
+INCS     = -I"C:/MinGW/include" -I"C:/MinGW/x86_64-w64-mingw32/include" -I"C:/MinGW/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/MinGW/include" -I"C:/MinGW/x86_64-w64-mingw32/include" -I"C:/MinGW/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+BIN      = devcppPortable.exe
+CXXFLAGS = $(CXXINCS) -m32 -Wall -Wextra -pedantic -mwindows -pipe
+CFLAGS   = $(INCS) -m32 -Wall -Wextra -pedantic -mwindows -pipe
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+devcppPortable_private.res: devcppPortable_private.rc resource.rc
+	$(WINDRES) -i devcppPortable_private.rc -F pe-i386 --input-format=rc -o devcppPortable_private.res -O coff 
+
