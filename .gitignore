@@ -61,4 +61,4 @@ __history/
 /MinGW64
 
 # Ignore Portable 7z
-*Portable.7z
+*.7z
