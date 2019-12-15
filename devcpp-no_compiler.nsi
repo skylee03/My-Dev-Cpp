@@ -2,7 +2,6 @@
 # Startup
 
 !define COMPILERNAME "No Compiler"
-!define COMPILERFOLDER ""
 !define DEVCPP_VERSION "5.12"
 !define FINALNAME "Dev-Cpp ${DEVCPP_VERSION} ${COMPILERNAME} Setup.exe"
 !define DISPLAY_NAME "Dev-C++ ${DEVCPP_VERSION}"
@@ -72,6 +71,7 @@ InstType "Safe";3
 !insertmacro MUI_LANGUAGE "Greek"
 !insertmacro MUI_LANGUAGE "Hungarian"
 !insertmacro MUI_LANGUAGE "Italian"
+!insertmacro MUI_LANGUAGE "Japanese"
 !insertmacro MUI_LANGUAGE "Korean"
 !insertmacro MUI_LANGUAGE "Latvian"
 !insertmacro MUI_LANGUAGE "Norwegian"
@@ -320,7 +320,6 @@ SectionEnd
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionMain}        "The Dev-C++ IDE (Integrated Development Environment), package manager and templates"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionIcons}       "Various icons that you can use in your programs"
-#!insertmacro MUI_DESCRIPTION_TEXT ${SectionMinGW}       "The ${COMPILERNAME} compiler and associated tools, headers and libraries"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionLangs}       "The Dev-C++ interface translated to different languages (other than English which is built-in)"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionAssocs}      "Use Dev-C++ as the default application for opening these types of files"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionShortcuts}   "Create shortcuts to Dev-C++ in various folders"

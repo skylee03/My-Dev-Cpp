@@ -465,7 +465,7 @@ Ver=1
 36006=Mingw Compiler 網站：
 36007=Dev-C++ 討論區：
 36008=Dev-C++ Mailing-list：
-36009=作者 E-mail：
+36009=Dev-C++ 資源站：
 36010=http://www.bloodshed.net
 36011=http://www.mingw.org
 36012=http://www.bloodshed.net/forum
@@ -474,7 +474,17 @@ Ver=1
 36015=檢查更新(&C)
 36016=4.9.9.2 版之後的開發者：
 36017=http://orwellengine.blogspot.com
-
+36018=<= 4.9.9.2 (老版本)
+36019=代碼庫:
+36020=Subreddit:
+36021=編譯器
+36022=TDM-GCC 編譯器網址:
+36023=<= 5.11 (老版本)
+36024=請透過捐贈支持 Orwell Dev-C++:
+36025=部落格:
+79022=> 5.11
+79023=Github 倉庫:
+79024=MinGW-W64 網站:
 
 37001=編輯程式碼插入項目...
 37002=建立新的程式碼插入項目...

@@ -133,13 +133,23 @@ Section "Icon files" SectionIcons
   File /nonfatal /r "Icons\*.*"
 SectionEnd
 
-Section "${COMPILERNAME} compiler" SectionMinGW
+SubSection "${COMPILERNAME} compiler" SectionMinGW
+
+Section "${COMPILERNAME} 32-bit compiler"
+  SectionIn 1 2 3
+  SetOutPath $INSTDIR
+
+  File /nonfatal /r "${COMPILERFOLDER32}"
+SectionEnd
+
+Section "${COMPILERNAME} 64-bit compiler"
   SectionIn 1 2 3
   SetOutPath $INSTDIR
 
   File /nonfatal /r "${COMPILERFOLDER64}"
-  File /nonfatal /r "${COMPILERFOLDER32}"
 SectionEnd
+
+SubSectionEnd
 
 Section "Language files" SectionLangs
   SectionIn 1 3
@@ -330,7 +340,7 @@ SectionEnd
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionMain}        "The Dev-C++ IDE (Integrated Development Environment), package manager and templates"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionIcons}       "Various icons that you can use in your programs"
-#!insertmacro MUI_DESCRIPTION_TEXT ${SectionMinGW}       "The ${COMPILERNAME} compiler and associated tools, headers and libraries"
+!insertmacro MUI_DESCRIPTION_TEXT ${SectionMinGW}       "The ${COMPILERNAME} compiler and associated tools, headers and libraries"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionLangs}       "The Dev-C++ interface translated to different languages (other than English which is built-in)"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionAssocs}      "Use Dev-C++ as the default application for opening these types of files"
 !insertmacro MUI_DESCRIPTION_TEXT ${SectionShortcuts}   "Create shortcuts to Dev-C++ in various folders"
