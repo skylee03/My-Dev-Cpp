@@ -535,9 +535,9 @@ const
   ID_AB_PRE511                          = 36023;
   ID_AB_DONATE                          = 36024;
   ID_AB_BLOGNAME                        = 36025;
-  ID_AB_POST511                         = 79022;
-  ID_AB_GITHUB                          = 79023;
-  ID_AB_MINGWW64                        = 79024;
+  ID_AB_POST511                         = 36026;
+  ID_AB_GITHUB                          = 36027;
+  ID_AB_MINGWW64                        = 36028;
   
   // Code Inserts Edit
   ID_CIE_EDCAPTION                      = 37001;

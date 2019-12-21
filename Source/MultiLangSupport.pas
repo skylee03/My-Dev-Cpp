@@ -79,9 +79,9 @@ begin
   fDefaultLangStrings := TStringList.Create;
 
   // Load default english file from languages directory
-  DefaultLangFile := ValidateFile('English.lng', devDirs.Lang);
+  DefaultLangFile := ValidateFile('en.lng', devDirs.Lang);
   if DefaultLangFile = '' then begin
-    MessageDlg('Could not open language file English.lng', mtError, [mbOK], 0);
+    MessageDlg('Could not open language file en.lng', mtError, [mbOK], 0);
   end else begin
     fDefaultLangStrings.LoadFromFile(DefaultLangFile);
   end;
@@ -138,7 +138,7 @@ begin
         for I := 0 to fLangList.Count - 1 do begin
           sl.LoadFromFile(fLangList[I]);
           s := sl.Values['Lang'];
-          if SameText(ExtractFileName(fLangList[I]), 'English.lng') and (devData.Language = '') then
+          if SameText(ExtractFileName(fLangList[I]), 'en.lng') and (devData.Language = '') then
             fCurLang := s;
           if s = '' then
             fLangList[I] := format('%s=%s', [fLangList[I], ChangeFileExt(ExtractFileName(fLangList[I]), '')])
@@ -201,7 +201,7 @@ var
   i: integer;
 begin
   // returns the filename of the lang file described as Desc
-  // for example with Desc="English (Original)", returns "English.lng"
+  // for example with Desc="English (Original)", returns "en.lng"
   Result := Desc;
   if not fLangListLoaded then
     CheckLanguageFiles; // can be slow, so load on demand
