@@ -1,4 +1,8 @@
+<center>
+
 # My Dev-C++
+
+![](https://raw.githubusercontent.com/skylee03/My-Dev-Cpp/master/devcpp.ico)
 
 *A new and improved fork of [Orwell Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)*
 
@@ -6,6 +10,8 @@
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-green.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 ![Platform: Windows](https://img.shields.io/badge/Platform-Windows-green)
 ![Made with Delphi 7](https://img.shields.io/badge/Made_with-Delphi_7-green)
+
+</center>
 
 ## Main Features
 
