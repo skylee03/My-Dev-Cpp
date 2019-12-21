@@ -23,3 +23,6 @@
 ## Screenshots
 ![Compiling](https://i.loli.net/2019/12/07/IlD5Z68xVvmdcSn.png)
 ![Debugging](https://i.loli.net/2019/12/07/xAK2PJrYNQ7a5ig.png)
+
+## Old Developers
+[![bloodshed.gif](https://i.loli.net/2019/12/21/zH5n8UOfk2YVEtb.gif)](http://www.bloodshed.net/)
