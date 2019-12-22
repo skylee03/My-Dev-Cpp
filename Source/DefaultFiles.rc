@@ -1,6 +1,6 @@
 CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "..\devcpp.exe.manifest"
 
-English lng ..\lang\English.lng
+English lng ..\lang\en.lng
 
 /* default order of highlighter component
    may be good idea to make more concrete
@@ -270,7 +270,7 @@ STRINGTABLE
  9021, "13684944, 0"
  9022, "39423, 5328448"
 
- /* PlasticCodeWrap */
+ /* Plastic Code Wrap */
  10001, "clFuchsia, $021D160B, 0, 0, 0"
  10002, "$0039E455, $001D160B, 0, 0, 0"
  10003, "$00E09A1E, $001D160B, 0, 1, 0"

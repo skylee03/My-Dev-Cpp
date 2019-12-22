@@ -506,6 +506,7 @@ type
     fdblFiles: boolean; // double click opens files out of project manager
     fLangChange: boolean; // flag for language change
     fthemeChange: boolean; // did the theme change?
+    fNoSplashScreen: boolean; // disable splash screen
     fInterfaceFont: AnsiString; // UI font
     fInterfaceFontSize: integer; // UI font size
     fConsolePause: boolean; // pause console program after return
@@ -598,6 +599,7 @@ type
     property First: boolean read fFirst write fFirst;
     property Splash: AnsiString read fSplash write fSplash;
     property MRUMax: integer read fMRUMax write fMRUMax;
+    property NoSplashScreen: boolean read fNoSplashScreen write fNoSplashScreen;
     property ShortenCompPaths: boolean read fShortenCompPaths write fShortenCompPaths;
 
     //Execution

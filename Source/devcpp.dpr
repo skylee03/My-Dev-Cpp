@@ -31,6 +31,7 @@ uses
   Messages,
   main in 'main.pas' {MainForm},
   MultiLangSupport in 'MultiLangSupport.pas',
+  SplashFrm in 'SplashFrm.pas' {SplashForm},
   Version in 'Version.pas',
   Utils in 'Utils.pas',
   Tests in 'Tests.pas',
@@ -139,14 +140,22 @@ begin
   SetLength(INIFileName, 0);
   SetLength(ExeFolder, 0);
 
-  // Load settings
+  // Make the caption look nice
+  Application.Initialize;
+  Application.Title := 'Dev-C++';
+
+  // Create and fill settings structures
   devData.ReadSelf;
   CreateOptions;
 
-  // Create main window
-  Application.Initialize;
-  Application.Title := 'Dev-C++';
+  // Display it as soon as possible, and only if its worth viewing...
+  if (not devData.NoSplashScreen) or devData.First then
+    SplashForm := TSplashForm.Create(nil);
+
   Application.CreateForm(TMainForm, MainForm);
+  if Assigned(SplashForm) then
+    SplashForm.Close;
+	
   Application.Run;
 end.
 
