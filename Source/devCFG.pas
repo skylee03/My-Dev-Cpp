@@ -1394,12 +1394,18 @@ begin
   sl.Add(''); // Passing nothing effectively lets the compiler decide
   sl.Add('ISO C90=c90');
   sl.Add('ISO C99=c99');
-  sl.Add('ISO C++=c++98');
+  sl.Add('ISO C11=c11');
+  sl.Add('ISO C++98=c++98');
   sl.Add('ISO C++11=c++11');
+  sl.Add('ISO C++14=c++14');
+  sl.Add('ISO C++17=c++17');
   sl.Add('GNU C90=gnu90');
   sl.Add('GNU C99=gnu99');
-  sl.Add('GNU C++=gnu++98');
+  sl.Add('GNU C11=gnu11');
+  sl.Add('GNU C++98=gnu++98');
   sl.Add('GNU C++11=gnu++11');
+  sl.Add('GNU C++14=gnu++14');
+  sl.Add('GNU C++17=gnu++17');
   AddOption(ID_COPT_STD, ID_COPT_GRP_CODEGEN, True, True, False, 0, '-std=', sl);
 
   // Warnings
