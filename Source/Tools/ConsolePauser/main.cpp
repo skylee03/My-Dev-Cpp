@@ -47,12 +47,12 @@ string GetErrorMessage() {
 string GetCommand(int argc,char** argv) {
 	string result;
 	for(int i = 1;i < argc;i++) {
-		// Quote the first argument in case the path name contains spaces
-//		if(i == 1) {
-//			result += string("\"") + string(argv[i]) + string("\"");
-//		} else {
+		// Quote the argument if it contains spaces
+		if(string(argv[i]).find(" ") != string::npos) {
+			result += string("\"") + string(argv[i]) + string("\"");
+		} else {
 			result += string(argv[i]);
-//		}
+		}
 		
 		// Add a space except for the last argument
 		if(i != (argc-1)) {
