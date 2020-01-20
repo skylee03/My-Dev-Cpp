@@ -117,7 +117,7 @@ Section "Dev-C++ program files (required)" SectionMain
   
   ; Write required paths
   SetOutPath $INSTDIR\Lang
-  File /nonfatal /r "Lang\English.*"
+  File /nonfatal /r "Lang\en.*"
   SetOutPath $INSTDIR\Templates
   File /nonfatal /r "Templates\*"
   SetOutPath $INSTDIR\Help
