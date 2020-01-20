@@ -1,3 +1,10 @@
+Version 5.13 - 20 January 2020
+
+- Fixed a bug in console pauser related to spaces in paths and parameters.
+- Add newer C/C++ standards flags.
+- Recover splash form which has been removed since v5.10.
+- Fixed some translation files (zh_cn/zh_tw/en).
+
 Version 5.12 - 7 December 2019
 
 - Upgraded the default compiler to MinGW-W64 GCC 8.1.0.
@@ -5,6 +12,8 @@ Version 5.12 - 7 December 2019
 - Fixed some miskates in the English translation.
 - Add Chinese (Simplified/Traditional) translation of the setup wizard.
 - Add new contents into the "About".
+
+=========================
 
 Version 5.11 - 27 April 2015
 
