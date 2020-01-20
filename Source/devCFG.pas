@@ -2132,8 +2132,8 @@ begin
           SetOption(option, '1');
       end;
 
-      {// Default, 32bit release profile
-      BaseSet := AddSet(BaseSet);
+      // Default, 32bit release profile
+      {BaseSet := AddSet(BaseSet);
       with BaseSet do begin
         Name := BaseName + ' 32-bit Release';
         if FindOption('-', option, index) then // -m is used my -mINSTRUCTIONSET, so use - instead

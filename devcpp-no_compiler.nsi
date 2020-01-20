@@ -2,7 +2,7 @@
 # Startup
 
 !define COMPILERNAME "No Compiler"
-!define DEVCPP_VERSION "5.12"
+!define DEVCPP_VERSION "5.13"
 !define FINALNAME "Dev-Cpp ${DEVCPP_VERSION} ${COMPILERNAME} Setup.exe"
 !define DISPLAY_NAME "Dev-C++ ${DEVCPP_VERSION}"
 
