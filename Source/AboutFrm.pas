@@ -90,7 +90,7 @@ begin
   grpLinks.Caption := Lang[ID_AB_WEBCAP];
   lblPost511.Caption := Lang[ID_AB_POST511];
   lblGithub.Caption := Lang[ID_AB_GITHUB];
-  lblMinGWW64.Caption := Lang[ID_AB_MINGWW64];
+  lblMinGWW64.Caption := Lang[ID_AB_TDMGCC];
   lblPre511.Caption := Lang[ID_AB_PRE511];
   lblRepository.Caption := Lang[ID_AB_REPOSITORY];
   lblSubreddit.Caption := Lang[ID_AB_SUBREDDIT];

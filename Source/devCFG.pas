@@ -2103,7 +2103,7 @@ var
   BaseSet: TdevCompilerSet;
   BaseName: AnsiString;
   option: PCompilerOption;
-  index{, I}: integer;
+  index, I: integer;
 begin
   // Assume 64bit compilers are put in the MinGW64 folder
   if DirectoryExists(devDirs.Exec + 'MinGW64' + pd) then begin
@@ -2133,7 +2133,7 @@ begin
       end;
 
       // Default, 32bit release profile
-      {BaseSet := AddSet(BaseSet);
+      BaseSet := AddSet(BaseSet);
       with BaseSet do begin
         Name := BaseName + ' 32-bit Release';
         if FindOption('-', option, index) then // -m is used my -mINSTRUCTIONSET, so use - instead
@@ -2157,7 +2157,7 @@ begin
         Name := BaseName + ' 32-bit Profiling';
         if FindOption('-pg', option, index) then
           SetOption(option, '1');
-      end;}
+      end;
     end;
   end;
 

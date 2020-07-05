@@ -12967,17 +12967,17 @@ object AboutForm: TAboutForm
     object lblMinGWW64: TLabel
       Left = 16
       Top = 82
-      Width = 116
+      Width = 154
       Height = 15
-      Caption = 'MinGW-W64 Website:'
+      Caption = 'TDM-GCC Compiler Website:'
     end
     object lblMinGWW64URL: TLabel
       Left = 184
       Top = 82
-      Width = 134
+      Width = 173
       Height = 13
       Cursor = crHandPoint
-      Caption = 'http://www.mingw-w64.org/'
+      Caption = 'https://jmeubank.github.io/tdm-gcc/'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = 11

@@ -1,3 +1,8 @@
+Version 5.14 - 5 July 2020
+
+- Restore the status of TDM-GCC as the default compiler version, since its maintaince has been restart.
+- Upgrade the default compiler to TDM-GCC 9.2.0.
+
 Version 5.13 - 20 January 2020
 
 - Fixed a bug in console pauser related to spaces in paths and parameters.
