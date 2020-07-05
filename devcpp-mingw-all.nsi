@@ -1,10 +1,9 @@
 ####################################################################
 # Startup
 
-!define COMPILERNAME "MinGW-W64 GCC 8.1.0"
-!define COMPILERFOLDER64 "MinGW64"
-!define COMPILERFOLDER32 "MinGW32"
-!define DEVCPP_VERSION "5.13"
+!define COMPILERNAME "TDM-GCC 9.2.0"
+!define COMPILERFOLDER "MinGW64"
+!define DEVCPP_VERSION "5.14"
 !define FINALNAME "Dev-Cpp ${DEVCPP_VERSION} ${COMPILERNAME} Setup.exe"
 !define DISPLAY_NAME "Dev-C++ ${DEVCPP_VERSION}"
 
@@ -133,23 +132,12 @@ Section "Icon files" SectionIcons
   File /nonfatal /r "Icons\*.*"
 SectionEnd
 
-SubSection "${COMPILERNAME} compiler" SectionMinGW
-
-Section "${COMPILERNAME} 32-bit compiler"
+Section "${COMPILERNAME} compiler" SectionMinGW
   SectionIn 1 2 3
   SetOutPath $INSTDIR
 
-  File /nonfatal /r "${COMPILERFOLDER32}"
+  File /nonfatal /r "${COMPILERFOLDER}"
 SectionEnd
-
-Section "${COMPILERNAME} 64-bit compiler"
-  SectionIn 1 2 3
-  SetOutPath $INSTDIR
-
-  File /nonfatal /r "${COMPILERFOLDER64}"
-SectionEnd
-
-SubSectionEnd
 
 Section "Language files" SectionLangs
   SectionIn 1 3
@@ -488,8 +476,7 @@ Section "Uninstall"
   Delete "$INSTDIR\ConsolePauser.exe"
   Delete "$INSTDIR\copying.txt"
 
-  RMDir /r "$INSTDIR\${COMPILERFOLDER64}"
-  RMDir /r "$INSTDIR\${COMPILERFOLDER32}"
+  RMDir /r "$INSTDIR\${COMPILERFOLDER}"
   RMDir /r "$INSTDIR\Lang"
   RMDir /r "$INSTDIR\Examples"
   RMDir /r "$INSTDIR\Help"
