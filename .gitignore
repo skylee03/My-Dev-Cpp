@@ -60,5 +60,8 @@ __history/
 /MinGW32
 /MinGW64
 
+# Ignore Config Files
+/config
+
 # Ignore Portable 7z
 *.7z
