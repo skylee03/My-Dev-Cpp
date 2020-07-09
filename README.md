@@ -4,14 +4,14 @@
 
 *A new and improved fork of [Orwell Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)*
 
-[![Version: v5.14](https://img.shields.io/badge/Version-v5.14-green)](https://github.com/skylee03/My-Dev-Cpp/releases/)
+[![Version: v5.13](https://img.shields.io/badge/Version-v5.13-green)](https://github.com/skylee03/My-Dev-Cpp/releases/)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-green.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 ![Platform: Windows](https://img.shields.io/badge/Platform-Windows-green)
 ![Made with Delphi 7](https://img.shields.io/badge/Made_with-Delphi_7-green)
 
 ## Main Features
 
-- [TDM-GCC](https://jmeubank.github.io/tdm-gcc/) 9.2.0 32/64-bit Compiler
+- [MinGW-W64](https://sourceforge.net/projects/mingw-w64/) 8.1.0 32/64-bit Compiler
 - Syntax highlighting
 - Code completion
 - Code insight
