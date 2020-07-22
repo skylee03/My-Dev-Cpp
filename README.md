@@ -28,3 +28,18 @@
 
 ## Old Developers
 [![bloodshed.gif](https://i.loli.net/2019/12/21/zH5n8UOfk2YVEtb.gif)](http://www.bloodshed.net/)
+
+[Orwell Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
+
+## Alternatives
+*(Other active forks of Dev-C++)*
+
+### [Banzhusoft Dev-C++](https://github.com/banzhusoft/devcpp-cn)
+
+### [Embarcadero Dev-C++](https://github.com/Embarcadero/Dev-Cpp) (recommended)
+
+I have just noticed that Embarcadero is also maintaining a fork of Dev-C++. Given their unparalleled professionalism, I decided to regard the Embarcadero Dev-C++ as the orthodox successor of Bloodshed Dev-C++ and Orwell Dev-C++.
+
+I might keep on maintaining this repository for fun, but since I am now at grade 12 and is busy with my schoolwork, this repository might not get frequent maintaince. Thus the utilization of My Dev-C++ is no longer recommended.
+
+If you are expecting to have a more reliable programming enviroment, the Embarcadero Dev-C++ is a better choice.
